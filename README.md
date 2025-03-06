@@ -1,9 +1,9 @@
-FBA – Instituto Federal de Educação, Ciência e Tecnologia da Bahia
-Departamento de Ciência da Computação
-Graduação Tecnológica em Análise e Desenvolvimento de Sistemas
-INF011 – Padrões de Projeto
-Prof.: Frederico Barboza Data: 06/03/2025
-Alunos: Lucas da Silva Fonseca e Jaqueline Gabriela
+FBA – Instituto Federal de Educação, Ciência e Tecnologia da Bahia <br>
+Departamento de Ciência da Computação <br>
+Graduação Tecnológica em Análise e Desenvolvimento de Sistemas <br>
+INF011 – Padrões de Projeto <br>
+Prof.: Frederico Barboza Data: 06/03/2025 <br>
+Alunos: Lucas da Silva Fonseca e Jaqueline Gabriela <br>
 
 # Padrões de Projeto Utilizados
 ## Chain of Responsibility
