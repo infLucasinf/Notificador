@@ -14,7 +14,7 @@ public abstract class Handler {
         } else if (proximo != null) {
             proximo.processar(e);
         } else {
-            System.out.println("Nenhum notificação disponível para processar o evento: " + e.getDescricao());
+            System.out.println("\n\nNenhuma mensagem disponível para processar o evento: " + e.getDescricao());
         }
     }
 

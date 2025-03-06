@@ -21,6 +21,7 @@ public class HandlerPrioridadeBaixa extends Handler {
 
     @Override
     protected void notificar(Evento e) {        
+    	 System.out.println("\nEVENTO DE PRIORIDADE BAIXA");    	     	 
         String mensagem = estrategiaEmail.formatarMensagem(e);
         calendarService.adicionarEvento(mensagem);
     }

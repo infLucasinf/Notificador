@@ -1,13 +1,27 @@
-# Padrões de Projeto Utilizados
+FBA – Instituto Federal de Educação, Ciência e Tecnologia da Bahia
 
-## Cadeia de Responsabilidade
+Departamento de Ciência da Computação
+
+Graduação Tecnológica em Análise e Desenvolvimento de Sistemas
+
+INF011 – Padrões de Projeto
+
+Prof.: Frederico Barboza Data: 06/03/2025
+
+Alunos: Lucas da Silva Fonseca e Jaqueline Gabriela
+
+
+
+
+# Padrões de Projeto Utilizados
+## Chain of Responsibility
 - **Propósito:** Permite que uma solicitação seja processada por uma cadeia de objetos (manipuladores), onde cada manipulador decide se pode tratá-la ou delegá-la ao próximo na cadeia.
 - **Aplicação no Projeto:**
   - Handlers como `HandlerPrioridadeAlta`, `HandlerPrioridadeMedia` e `HandlerPrioridadeBaixa` processam eventos com base em faixas de prioridade e dados.
   - A classe `Notificador` configura a cadeia, que avalia cada evento em sequência até encontrar o manipulador correto.
 
-## Estratégia
-- **Propósito:** Encapsula algoritmos intercambiáveis em classes separadas, permitindo que o comportamento seja alterado dinamicamente.
+## Strategy
+- **Propósito:** Encapsula algoritmos em classes separadas, permitindo que o comportamento seja alterado dinamicamente.
 - **Aplicação no Projeto:**
   - A interface `EstrategiaNotificacao` define os métodos para formatação e envio de notificações.
   - Implementações como `NotificacaoEmail` e `NotificacaoWhatsApp` fornecem lógicas específicas para envio de e-mails e mensagens via WhatsApp.
@@ -16,7 +30,7 @@
 
 ## Pacotes e Classes
 
-O código está organizado nos seguintes pacotes:
+O código está organizado nos seguintes pacotes e suas respectivas classes:
 
 ### `br.ifba.inf011.modelo`
 - **`Evento.java`:** Classe que representa um evento, contendo prioridade, descrição e dados.

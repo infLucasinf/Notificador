@@ -23,7 +23,8 @@ public class HandlerPrioridadeAlta extends Handler {
     }
 
     @Override
-    protected void notificar(Evento e) {        
+    protected void notificar(Evento e) {
+    	System.out.println("EVENTO DE PRIORIDADE ALTA"); 
         String mensagemEmail = estrategiaEmail.formatarMensagem(e);
         String mensagemWhatsApp = estrategiaWhatsApp.formatarMensagem(e);
         String mensagemSMS = estrategiaSMS.formatarMensagem(e);

@@ -19,6 +19,7 @@ public class HandlerPrioridadeMedia extends Handler {
 
     @Override
     protected void notificar(Evento e) {        
+    	System.out.println("\nEVENTO DE PRIORIDADE NORMAL"); 
     	String mensagemEmail = estrategiaEmail.formatarMensagem(e);
         String mensagemRedeSocial = estrategiaRedeSocial.formatarMensagem(e);
         estrategiaEmail.enviar(mensagemEmail);
