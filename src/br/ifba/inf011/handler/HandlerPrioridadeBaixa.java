@@ -15,7 +15,7 @@ public class HandlerPrioridadeBaixa extends Handler {
 
     @Override
     protected boolean podeProcessar(Evento e) {        
-        return e.getPrioridade() >= 1 && e.getPrioridade() < 5 &&
+        return e.getPrioridade() >=1 && e.getPrioridade() < 5 &&
                e.iniciaEntre(LocalDateTime.now().minusDays(2), LocalDateTime.now());
     }
 

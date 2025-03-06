@@ -19,7 +19,7 @@ public class HandlerPrioridadeAlta extends Handler {
 
     @Override
     protected boolean podeProcessar(Evento e) {
-        return e.getPrioridade() == 10 && e.iniciaEm(LocalDate.now());
+        return e.getPrioridade() ==10 && e.iniciaEm(LocalDate.now());
     }
 
     @Override

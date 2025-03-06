@@ -10,6 +10,6 @@ public class NotificacaoRedeSocial implements EstrategiaNotificacao {
 
     @Override
     public void enviar(String mensagem) {
-        System.out.println("Postando na rede social: " + mensagem);
+        System.out.println("Postando na rede social: "+ mensagem);
     }
 }

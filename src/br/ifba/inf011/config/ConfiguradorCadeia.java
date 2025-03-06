@@ -9,13 +9,13 @@ import java.util.List;
 public class ConfiguradorCadeia {
     
     public static List<Handler> configurarCadeia() {
-        List<Handler> handlers = new ArrayList<>();
+        List<Handler> handlers =new ArrayList<>();
 
         
-        EstrategiaNotificacao email = new NotificacaoEmail();
-        EstrategiaNotificacao whatsApp = new NotificacaoWhatsApp();
-        EstrategiaNotificacao sms = new NotificacaoSMS();
-        EstrategiaNotificacao redeSocial = new NotificacaoRedeSocial();
+        EstrategiaNotificacao email =new NotificacaoEmail();
+        EstrategiaNotificacao whatsApp =new NotificacaoWhatsApp();
+        EstrategiaNotificacao sms =new NotificacaoSMS();
+        EstrategiaNotificacao redeSocial =new NotificacaoRedeSocial();
 
         
         Handler alta = new HandlerPrioridadeAlta(email, whatsApp, sms);
