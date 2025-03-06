@@ -31,15 +31,17 @@ O código está organizado nos seguintes pacotes e suas respectivas classes:
 - **`EstrategiaNotificacao.java`:** Interface para estratégias de notificação.
 - **`NotificacaoEmail.java`:** Implementação para envio por e-mail.
 - **`NotificacaoWhatsApp.java`:** Implementação para envio por WhatsApp.
+- **`NotificacaoRedeSocial.java`:** Implementação para envio por RedeSocial.
+- **`NotificacaoSMS.java`:** Implementação para envio por SMS.
 
 ### `br.ifba.inf011.service`
 - **`CalendarService.java`:** Serviço responsável por adicionar eventos ao Google Calendar.
 
 ### `br.ifba.inf011.handler`
 - **`Handler.java`:** Classe abstrata que define a estrutura da cadeia de manipuladores.
-- **`HandlerPrioridadeAlta.java`:** Manipulador para eventos de alta prioridade.
-- **`HandlerPrioridadeMedia.java`:** Manipulador para eventos de prioridade média.
-- **`HandlerPrioridadeBaixa.java`:** Manipulador para eventos de baixa prioridade.
+- **`HandlerPrioridadeAlta.java`:** Manipulador para eventos de alta prioridade (Envia para E-Mail, WhatsApp, SMS e Google Calendar).
+- **`HandlerPrioridadeMedia.java`:** Manipulador para eventos de prioridade média (E-mail e Rede Social).
+- **`HandlerPrioridadeBaixa.java`:** Manipulador para eventos de baixa prioridade (Google Calendar, ex: Evento Email adicionado no Google Calendar ).
 
 ### `br.ifba.inf011.config`
 - **`ConfiguradorCadeia.java`:** Classe que configura dinamicamente a cadeia de manipuladores e estratégias associadas.
